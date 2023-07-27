@@ -1,0 +1,43 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //Three type arry call by
+            //First as below example
+            var emp=["akash","Saurabh","Swarup","Akshay"];
+            for(i=0;i<emp.length;i++){
+                document.write(emp[i]+"<br/>");
+            }
+
+            //second example using New Keyword
+            var i;
+            var emp1=new Array();
+            emp1[0]="Akash";
+            emp1[1]="Akshay";
+            emp1[2]="Pratik"
+            for(i=0;i<emp1.length;i++){
+                document.write("<br/>"+emp1[i]);
+            }
+
+            //JavaScript array constructor (new keyword)
+
+            var emp2=new Array("Raj","Rajesh","Prem");
+            for(i=0;i<emp2.length;i++){
+                document.write("<br/>"+emp2[i]);
+               
+                
+            }
+            //concat Method
+            document.write ("<br/>"+emp2.concat("Pratik")+"<br/>");
+
+            //copywithin
+            document.write(emp2.copyWithin(0,1,2)+"<br/>")
+        </script>
+    </body>
+    </html>

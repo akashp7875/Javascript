@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var y=100;
+        function msg(){
+           // alert("This is java Script code")
+           var x=200;       //local Variable means declare inside th block or function.
+           document.write(" Value of local variable of X Is: "+x+" Value of global variable of Y Is: "+y);
+        }
+        function m(){
+            window.value=300;
+        }
+        function n(){
+            alert(window.value);
+        }
+        m();
+        n();
+    </script>
+    <form>
+        <input type="button" value="click" onclick="msg()">
+    </form>
+</body>
+</html>

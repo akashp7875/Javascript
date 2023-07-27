@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2x">
+        <tr>
+            <td id="p1"></td>
+            <td id="p2"></td>
+        </tr>
+    </table>
+    <input type="text" id="t1">
+    
+    <input type="text" id="t2" >
+    <input type="button" value="Submit" onclick="msg()">
+    <script>
+        function msg(){
+         var n1 = document.getElementById("t1").value;
+         var n2 = document.getElementById("t2").value;
+
+         document.getElementById("p1").innerHTML=n1;
+         
+         document.getElementById("p2").innerHTML=n2;
+    }
+    </script>
+</body>
+</html>

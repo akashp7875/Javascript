@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        // Function to reverse string
+   function ReverseString() {
+   // return str.split('').reverse().join('')
+   var r;
+   r=document.getElementById('t1').value;
+        document.write(r.concat(r.split('').reverse().join('')));
+        document.write(r.length*2)
+    }
+    function msg() {
+   // return str.split('').reverse().join('')
+   var s;
+   s=document.getElementById("t2").value;
+   if(s==""){
+document.write("Enter String");
+    return false;
+   }
+       var p= document.write(s.concat(s.split('').reverse().join('')))
+        p=document.write(s.length*2)
+        document.getElementById("p1").innerHTML=p;
+    }
+      
+    // Function call
+    //alert(ReverseString("Geeks for Geeks"))
+    </script>
+    <input type="text" id="t1" placeholder="enter any string">
+    <input type="button" value="click" onclick="ReverseString()">
+    
+        
+    <form style="border: 1px solid black; text-align: center; margin: 30px; padding: 50px; background-color: gainsboro;width:  50%; height: 70vh;">
+        <h2>String Game</h2>
+        <input type="text" id="t2" placeholder="enter string"  style="width: 40%; height: 50px; text-align: center;"><br>
+        <input type="submit" value="play" onclick="msg()" style="margin-top: 20px; width: 40%; color:white; background-color: aqua;height: 50px;font-size: 30px;">
+        
+        <p id="p1"> </p>
+    </form>
+   
+
+</body>
+</html>

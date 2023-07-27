@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+Cats:<input name="animal" type="checkbox" value="Cats">
+Dogs:  <input name="animal" type="checkbox" value="Dogs">
+
+<button onclick="myFunction()">Test</button>
+
+<script>
+function myFunction() {//from  w w w.j a  va  2 s  . c  o  m
+    var x = document.getElementsByName("animal");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        if (x[i].type == "checkbox") {
+            x[i].checked = true;
+            document.getElementById("t1").innerHTML=i;
+        }
+    }
+}
+</script>
+
+<p id="t1"></p>
+</body>
+</html>

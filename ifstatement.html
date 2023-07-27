@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>IF Statement Example</p>
+    <script>
+       /* function msg(){
+            var c1=document.getElementById("t1").value;
+        //var a=20;
+        if(c1<18){
+          document.write("Agree")
+        }
+        else{
+            document.write("NotAgree")
+        }
+    }*/
+    function msg(){
+            var c1=document.getElementById("t1").value;
+        //var a=20;
+        if(c1==0 | c1%7==0){
+          document.write("Monday")
+        }
+        else if(c1==1 | c1%7==1){
+            document.write("Tuesday")
+        }
+        else if(c1==2 | c1%7==2){
+            document.write("Wendsday")
+        }
+        else if(c1==3 | c1%7==3){
+            document.write("Thursday")
+        }
+        else if(c1==4 | c1%7==4){
+
+            document.write("Friday")
+        }
+        else if(c1==5 | c1%7==5){
+            document.write("Saturday")
+        }
+        else if(c1==6 | c1%7==6) {
+            document.write("Sunday")
+        }
+
+    }
+
+    </script>
+    <form>
+        <input type="text" id="t1" placeholder="Enter 0 t 6 any to print day">
+        <input type="button" value="click" onclick="msg()">
+    </form>
+</body>
+</html>

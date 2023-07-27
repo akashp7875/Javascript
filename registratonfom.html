@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body style="background-color: aqua;">
+    <script>
+        function msg() {
+            var c1 = document.getElementById("t1").value;
+            var c2 = document.getElementById("t2").value;
+            var c3 = document.getElementById("t3").value;
+            var c4 = document.getElementById("t4").value;
+            //var c3 = document.getElementById("Gender").value;
+
+
+
+            document.getElementById("p1").innerHTML = c1;
+            document.getElementById("p2").innerHTML = c2;
+            document.getElementById("p3").innerHTML = c3;
+            document.getElementById("p33").innerHTML = c4;
+            //getelementbyname using checkbox
+
+            var X = document.getElementsByName("hobies")
+            var i;
+            for(i=0;i<X.length;i++)
+            {
+                if(X[0].checked){
+                    var y = "Playing"
+                    document.getElementById("p4").innerHTML=y;
+                }
+                else if(X[1].checked){
+                    var y = "Swimming"
+                    document.getElementById("p5").innerHTML=y;
+                }
+                else if(X[2].checked){
+                    var y = "Reading"
+                    document.getElementById("p6").innerHTML=y;
+                }
+                else if(X[3].checked){
+                    var y = "Traking"
+                    document.getElementById("p7").innerHTML=y;
+                }
+            }
+
+            //getelementbyname using radio button
+            var gender = document.getElementsByName("Gender");
+            if (gender[0].checked) {
+                var Z = "Male"
+                document.getElementById("p31").innerHTML = Z;
+                //document.write("Male")
+            }
+            else if (gender[1].checked) {
+                var Z = "Female"
+                document.getElementById("p32").innerHTML = Z;
+                //document.write("Female")
+            }
+
+            //document.getElementsByName("p3").innerHTML=c3;
+            /*var ele = document.getElementsByName('Gender');
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked){
+                    document.write("Gender: "+ele[i].value);
+                // document.getElementById("result").innerHTML= "Gender: "+ele[i].value;
+            }}*/
+
+
+        }
+       /*function msg1() {
+            var gender = document.getElementsByName("Gender");
+            if (gender[0].checked) {
+                var Z = "Male"
+                document.getElementById("p31").innerHTML = Z;
+                //document.write("Male")
+            }
+            else if (gender[1].checked) {
+                var Z = "Female"
+                document.getElementById("p32").innerHTML = Z;
+                //document.write("Female")
+            }
+        }*/
+
+    </script>
+    <form style="text-align: center; border: 2px solid red;margin: 50px; padding: 20px;">
+
+        <label for="#" id="l1">First Name</label>
+        <input type="text" id="t1" placeholder="Enter First Name">
+        <br><br>
+        <label for="#" id="l2">Last Name</label>
+        <input type="text" id="t2" placeholder="Enter your Last Name">
+        <br><br>
+        <label for="#" id="l3">Gender:</label>
+        <input type="radio" name="Gender" value="Male">Male
+        <input type="radio" name="Gender" value="Female">Female
+        <br><br>
+        <label for="#" id="l2">Mobile No</label>
+        <input type="text" id="t3" placeholder="Enter your Mobile No">
+    </br></br>
+    <label for="#" id="l5">Email : </label>
+    <input type="email" id="t4" placeholder="Enter your Email Id">
+
+        <!--<input type="button" value="click" onclick="msg1()"> -->
+
+
+        <h1>Hobbies</h1>
+        <input type="checkbox" name="hobies" value="Playing">Playing 
+        <input type="checkbox" name="hobies" value="Playing">Swimming 
+        <input type="checkbox" name="hobies" value="Playing">Reading 
+        <input type="checkbox" name="hobies" value="Playing">Traking 
+    </br></br>
+        <input type="button" value="Submit" onclick="msg()">
+
+    </form>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p31"></p>
+    <p id="p32"></p>
+    <p id="p33"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    
+
+
+</body>
+
+</html>
